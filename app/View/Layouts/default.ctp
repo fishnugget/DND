@@ -29,17 +29,50 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('global');
 
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+		//echo $this->fetch('meta');
+		//echo $this->fetch('css');
+		//echo $this->fetch('script');
 	?>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<div id="main-logo"></div>
+            <div class="row">
+                <div id="social-bar"></div>
+                <div id="search"></div>
+            </div>
+            <div id="main-nav">
+            	<ul id="main-nav-links">
+                	<li class="left">
+                    	<div class="headline">HOME</div>
+                    	<div class="subhead">DRINKS NEXT DOOR</div>
+                    </li>
+                    <li class="left">
+                    	<div class="headline">ABOUT</div>
+                    	<div class="subhead">HOW IT WORKS</div>
+                    </li>
+                    <li class="left">
+                    	<div class="headline">DEALS</div>
+                    	<div class="subhead">FEATURED DEALS</div>
+                    </li>
+                    <li class="right">
+                    	<div class="headline">HOODS</div>
+                    	<div class="subhead">WHERE TO GO</div>
+                    </li>
+                    <li class="right">
+                    	<div class="headline">SPOTS</div>
+                    	<div class="subhead">DRINKS NEXT DOOR</div>
+                    </li>
+                    <li class="right">
+                    	<div class="headline">STUFF</div>
+                    	<div class="subhead">DRINKS NEXT DOOR</div>
+                    </li>
+                </ul>
+            </div>
 		</div>
 		<div id="content">
 
