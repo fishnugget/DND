@@ -30,6 +30,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('global');
+		
+		echo $this->Html->Script('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
+		echo $this->Html->script('global');
+		
 
 		//echo $this->fetch('meta');
 		//echo $this->fetch('css');
@@ -40,36 +44,59 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body>
 	<div id="container">
 		<div id="header">
-			<div id="main-logo"></div>
+			<a href="/"><div id="main-logo"></div></a>
             <div class="row">
-                <div id="social-bar"></div>
-                <div id="search"></div>
+                <div id="social-bar">
+                	<ul>
+                    	<a href="javascript:;"><li class="facebook"></li></a>
+                        <a href="javascript:;"><li class="twitter"></li></a>
+                        <a href="javascript:;"><li class="rss"></li></a>
+                        <a href="javascript:;"><li class="google"></li></a>
+                    </ul>
+                </div>
+                <div id="search-site">
+                	<form method="post" action="" enctype="multipart/form-data">
+                    	<input type="text" name"search-site" rel="default" default="SEARCH" value="SEARCH"/>
+                    </form>
+                </div>
             </div>
             <div id="main-nav">
             	<ul id="main-nav-links">
                 	<li class="left">
+                    	<a href="javascript:;">
                     	<div class="headline">HOME</div>
                     	<div class="subhead">DRINKS NEXT DOOR</div>
+                        </a>
                     </li>
                     <li class="left">
+                    	<a href="javascript:;">
                     	<div class="headline">ABOUT</div>
                     	<div class="subhead">HOW IT WORKS</div>
+                        </a>
                     </li>
                     <li class="left">
+                    	<a href="javascript:;">
                     	<div class="headline">DEALS</div>
                     	<div class="subhead">FEATURED DEALS</div>
+                        </a>
                     </li>
                     <li class="right">
+                    	<a href="javascript:;">
                     	<div class="headline">HOODS</div>
                     	<div class="subhead">WHERE TO GO</div>
+                        </a>
                     </li>
                     <li class="right">
+                    	<a href="javascript:;">
                     	<div class="headline">SPOTS</div>
                     	<div class="subhead">DRINKS NEXT DOOR</div>
+                        </a>
                     </li>
                     <li class="right">
+                    	<a href="javascript:;">
                     	<div class="headline">STUFF</div>
                     	<div class="subhead">DRINKS NEXT DOOR</div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -81,11 +108,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
+			<?php //echo $this->Html->link(
+					//$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+					//'http://www.cakephp.org/',
+					//array('target' => '_blank', 'escape' => false)
+				//	);
 			?>
 		</div>
 	</div>

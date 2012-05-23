@@ -21,6 +21,19 @@ endif;
 App::uses('Debugger', 'Utility');
 ?>
 
+<div id="home-search-top">
+	<div id="home-top-mobile"></div>
+    <div id="home-top-right">
+    	<div id="home-top-headline"></div>
+        <div id="home-top-search-box">
+        	<form action="" method="post" enctype="multipart/form-data">
+            	<input type="text" name="main-search" id="" value="ZIPCODE, NEIGHBORHOOD, OR RESTAURANT" rel="default" default="ZIPCODE, NEIGHBORHOOD, OR RESTAURANT"/><button type="submit">SEARCH</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="home-mod-row"></div>
 <!--
 <a href="http://cakephp.org/changelogs/<?php echo Configure::version(); ?>"><?php echo __d('cake_dev', 'Read the changelog'); ?> </a>
 <?php
@@ -30,7 +43,7 @@ endif;
 ?>
 -->
 
-
+<!--
 <h3><?php echo __d('cake_dev', 'Editing this Page'); ?></h3>
 <p>
 <?php
@@ -90,3 +103,4 @@ You can also add some CSS styles for your pages at: APP/webroot/css.');
 	<li><a href="http://cakephp.lighthouseapp.com/"><?php echo __d('cake_dev', 'CakePHP Lighthouse'); ?> </a>
 	<ul><li><?php echo __d('cake_dev', 'CakePHP Tickets, Wiki pages, Roadmap'); ?></li></ul></li>
 </ul>
+-->
