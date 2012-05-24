@@ -33,7 +33,54 @@ App::uses('Debugger', 'Utility');
     </div>
 </div>
 
-<div class="home-mod-row"></div>
+<div class="home-mod-row">
+	<ul id="module-homemash">
+    	<li>
+        	<div class="row"><div class="vendor-icon"></div></div>
+            <div class="row">
+            <ul class="stars-rating">
+            	<li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="off"></li>
+            </ul></div>
+        </li>
+        <li>
+        	<div class="row"><div class="vendor-icon"></div></div>
+            <div class="row">
+            <ul class="stars-rating">
+            	<li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="off"></li>
+            </ul></div>
+        </li>
+        <li>
+        	<div class="row"><div class="vendor-icon"></div></div>
+            <div class="row">
+            <ul class="stars-rating">
+            	<li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="off"></li>
+            </ul></div>
+        </li>
+        <li>
+        	<div class="row"><div class="vendor-icon"></div></div>
+            <div class="row">
+            <ul class="stars-rating">
+            	<li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="off"></li>
+            </ul></div>
+        </li>
+    </div>
+</div>
 <!--
 <a href="http://cakephp.org/changelogs/<?php echo Configure::version(); ?>"><?php echo __d('cake_dev', 'Read the changelog'); ?> </a>
 <?php

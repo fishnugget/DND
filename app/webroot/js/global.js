@@ -8,7 +8,7 @@ $(document).ready(function(){
 	});
 	
 	$('input').focusout(function(){
-		if($(this).val() == ''){
+		if($(this).val() == '' || $(this).val() == 'ZIPCODE, NEIGHBORHOOD, OR RESTAURANT'){
 			$(this).val($(this).attr('default')).css('color','#BFB9B1').attr('rel','default');
 		}
 	});
