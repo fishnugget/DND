@@ -80,6 +80,30 @@ p {
 	background: url('../img/bkg/hdr_overlay.png') repeat-x top;
 }
 
+#content{
+	clear: both;
+	color: #333;
+	padding: 10px 20px 40px 20px;
+	overflow: auto;
+	min-height:250px;
+	width: 980px;
+	margin:auto;
+}
+
+#footer {
+	clear: both;
+	padding: 6px 10px;
+	text-align: right;
+}
+
+.half{
+	float:left;
+	width:50%;
+	margin:0;
+	padding:0;
+	display:block;	
+}
+
 #header{
 	padding: 25px 20px;
 	position:relative;
@@ -109,7 +133,6 @@ p {
 .home-mod-row{
 	float: left;
 	clear: left;
-	height: 160px;
 	width: 940px;
 	border-top: 1px solid #D3CDC5;
 	border-bottom: 1px solid #D3CDC5;
@@ -184,22 +207,6 @@ p {
 		border:none;
 	}
 
-#content{
-	clear: both;
-	color: #333;
-	padding: 10px 20px 40px 20px;
-	overflow: auto;
-	min-height:250px;
-	width: 980px;
-	margin:auto;
-}
-
-#footer {
-	clear: both;
-	padding: 6px 10px;
-	text-align: right;
-}
-
 #main-logo{
 	width:256px;
 	height:210px;
@@ -255,6 +262,23 @@ p {
 		clear:left;	
 	}
 
+.left{
+	float:left;
+}
+
+.margin-0{
+	margin:0px;
+}
+
+.margin-tb-20{
+	margin:20px 0;
+}
+
+.margin-tb-0{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
 #module-homemash{
 	float:left;
 	width:100%;
@@ -267,9 +291,16 @@ p {
 		display: block;
 		float: left;
 		width: 151px;
-		height: 160px;
 		margin: 0 42px;
 	}
+
+.noborder{
+	border:none;	
+}
+
+.quarter{
+	width:25%;
+}
 
 .row{
 	width:100%;
@@ -362,7 +393,17 @@ p {
 	.stars-rating li.off{
 		background-position:-958px -13px;	
 	}	
-	
+
+.text-headline{
+	width:100%;
+	font-size:22px;
+}
+
+.text-short-body{
+	width:95%;
+	font-size:12px;	
+}
+
 .vendor-icon{
 	width: 140px;
 	height: 85px;

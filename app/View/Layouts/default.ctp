@@ -106,8 +106,19 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
+            
+            <div class="home-mod-row noborder margin-tb-20">
+        		<div class="quarter left">1</div>
+                <div class="quarter left">2</div>
+                <div class="quarter left">3</div>
+                <div class="quarter left">4</div>
+        	</div>
+		
+        </div>
+		
+        <!-- 
+        <div id="footer">
+        
 			<?php //echo $this->Html->link(
 					//$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
 					//'http://www.cakephp.org/',
@@ -115,6 +126,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				//	);
 			?>
 		</div>
+        -->
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
