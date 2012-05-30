@@ -6,7 +6,6 @@ App::uses('AppModel', 'Model');
  * @property Deal $Deal
  * @property User $User
  * @property Payment $Payment
- * @property Payment $Payment
  */
 class Order extends AppModel {
 /**
@@ -97,26 +96,4 @@ class Order extends AppModel {
 			'order' => ''
 		)
 	);
-
-/**
- * hasMany associations
- *
- * @var array
- */
-	public $hasMany = array(
-		'Payment' => array(
-			'className' => 'Payment',
-			'foreignKey' => 'order_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
-
 }
