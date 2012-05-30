@@ -15,6 +15,8 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
+ $this->set('title_for_layout', 'View Active Users');
+ 
 if (Configure::read('debug') == 0):
 	throw new NotFoundException();
 endif;

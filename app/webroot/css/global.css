@@ -90,6 +90,36 @@ p {
 	margin:auto;
 }
 
+.footer-social-copy{
+	font-size: 12px;
+	padding-top: 7px;
+	margin-left: 3px;
+}
+
+.footer-social-icon{
+	width:30px;
+	height:30px;
+	background: url('../img/main_sprites.png') no-repeat left;
+}
+
+	.footer-social-icon.copyright{
+		background-position: -387px -184px;	
+	}
+	
+	.footer-social-icon.email{
+		background-position: -348px -184px;
+	}
+	
+	.footer-social-icon.facebook{
+		background-position: -309px -184px;	
+	}
+	
+	.footer-social-icon.twitter{
+		background-position: -270px -184px;
+	}
+	
+	.footer-social-icon
+
 #footer {
 	clear: both;
 	padding: 6px 10px;
@@ -149,7 +179,7 @@ p {
 
 #home-top-headline{
 	float:left;
-	width:530px;
+	width:512px;
 	height:175px;
 	background: url('../img/main_sprites.png') no-repeat left;
 	background-position: -265px 0;

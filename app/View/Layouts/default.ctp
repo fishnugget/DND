@@ -16,7 +16,9 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('cake_dev', 'Drinks Next Door');
+
+$this->set('title_for_layout','Good ');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -108,10 +110,22 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->fetch('content'); ?>
             
             <div class="home-mod-row noborder margin-tb-20">
-        		<div class="quarter left">1</div>
-                <div class="quarter left">2</div>
-                <div class="quarter left">3</div>
-                <div class="quarter left">4</div>
+        		<div class="quarter left">
+                	<div class="footer-social-icon facebook left"></div>
+                    <div class="footer-social-copy left">facebook.com/DrinksNextDoor</div>
+                </div>
+                <div class="quarter left">
+                	<div class="footer-social-icon twitter left"></div>
+                    <div class="footer-social-copy left">Follow Us @DrinksNextDoor</div>
+                </div>
+                <div class="quarter left">
+                	<div class="footer-social-icon email left"></div>
+                    <div class="footer-social-copy left">hello@drinksnextdoor.com</div>
+                </div>
+                <div class="quarter left">
+                	<div class="footer-social-icon copyright left"></div>
+                    <div class="footer-social-copy left">Copyright 2012, Drinks Next Door</div>
+                </div>
         	</div>
 		
         </div>
