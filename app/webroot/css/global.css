@@ -186,6 +186,10 @@ p {
 	margin-top:20px;
 }
 
+	#home-top-headline.splash{
+		background-position: -265px -245px;
+	}
+
 #home-top-mobile{
 	float: left;
 	background: url('../img/main_sprites.png') no-repeat left;
@@ -196,6 +200,10 @@ p {
 	left: 86px;
 	background-position: 10px -215px;
 }
+
+	#home-top-mobile.splash{
+		background-position: 10px -570px;
+	}
 
 #home-top-right{
 	float: right;

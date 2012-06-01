@@ -25,9 +25,22 @@ echo $this->Html->script('home');
 ?>
 
 <?php
-if($_SERVER['HTTP_HOST'] == 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
+//CONTENT FOR SPLASH PAGE
+if($_SERVER['HTTP_HOST'] !== 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
+echo $this->Html->css('list');
 ?>
 
+<div id="home-search-top">
+	<div id="home-top-mobile" class="splash"></div>
+    <div id="home-top-right">
+    	<div id="home-top-headline" class="splash"></div>
+        <div id="home-top-search-box">
+        	<form action="" method="post" enctype="multipart/form-data">
+            	<input type="text" name="main-search" id="" value="ENTER YOUR EMAIL TO RECEIVE UPDATES" rel="default" default="ENTER YOUR EMAIL TO RECEIVE UPDATES"/><button type="submit">SEARCH</button>
+            </form>
+        </div>
+    </div>
+</div>
 <?php
 }else{
 
