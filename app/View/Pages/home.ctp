@@ -24,6 +24,13 @@ App::uses('Debugger', 'Utility');
 echo $this->Html->script('home');
 ?>
 
+<?php
+if($_SERVER['HTTP_HOST'] == 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
+	die('coming soon');	
+}
+
+?>
+
 <div id="home-search-top">
 	<div id="home-top-mobile"></div>
     <div id="home-top-right">
