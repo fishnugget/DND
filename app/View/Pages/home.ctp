@@ -26,7 +26,7 @@ echo $this->Html->script('home');
 
 <?php
 //CONTENT FOR SPLASH PAGE
-if($_SERVER['HTTP_HOST'] !== 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
+if($_SERVER['HTTP_HOST'] == 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
 echo $this->Html->css('list');
 ?>
 
