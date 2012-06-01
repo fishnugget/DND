@@ -26,7 +26,7 @@ echo $this->Html->script('home');
 
 <?php
 //CONTENT FOR SPLASH PAGE
-if($_SERVER['HTTP_HOST'] == 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
+if($_SERVER['HTTP_HOST'] !== 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
 echo $this->Html->css('list');
 ?>
 
@@ -35,9 +35,17 @@ echo $this->Html->css('list');
     <div id="home-top-right">
     	<div id="home-top-headline" class="splash"></div>
         <div id="home-top-search-box">
-        	<form action="" method="post" enctype="multipart/form-data">
-            	<input type="text" name="main-search" id="" value="ENTER YOUR EMAIL TO RECEIVE UPDATES" rel="default" default="ENTER YOUR EMAIL TO RECEIVE UPDATES"/><button type="submit">SEARCH</button>
+        <?php
+			echo $this->Form->create('Email', array('action' => 'splash'));
+			echo $this->Form->input('email', array('rel'=>'default', 'default'=>'ENTER YOUR EMAIL TO RECEIVE UPDATES', 'value'=>'ENTER YOUR EMAIL TO RECEIVE UPDATES', 'label'=>false, 'div'=>false));
+			echo $this->Form->button('Submit');
+			echo $this->Form->end();
+		?>
+        <!--
+        	<form action="/email/splash" method="post" enctype="multipart/form-data">
+            	<input type="text" name="email" id="email" name="email_address" value="ENTER YOUR EMAIL TO RECEIVE UPDATES" rel="default" default="ENTER YOUR EMAIL TO RECEIVE UPDATES"/><button type="submit">SEARCH</button>
             </form>
+            -->
         </div>
     </div>
 </div>
