@@ -26,8 +26,10 @@ echo $this->Html->script('home');
 
 <?php
 if($_SERVER['HTTP_HOST'] == 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
-	die('coming soon');	
-}
+?>
+
+<?php
+}else{
 
 ?>
 
@@ -99,5 +101,6 @@ if($_SERVER['HTTP_HOST'] == 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] ==
         	<div class="text-headline">TWITTER FEED</div>
             <div class="text-short-body">Integer vitae fermentum est. Nam ultricies, magna sit amet vehicula hendrerit, ligula urna tempus risus, ac gravida urna est id metus. Maecenas tincidunt placerat elit id hendrerit. Curabitur ultricies lorem metus, eu vehicula felis. Integer massa massa, dignissim vel ullamcorper at, fringilla eget leo</div>
         </div>
+<?php } ?>
 
 
