@@ -424,6 +424,10 @@ p {
 		background-position:-958px -13px;	
 	}	
 
+.subpage{
+	margin-top:70px;
+}
+
 .text-headline{
 	width:100%;
 	font-size:22px;
@@ -432,6 +436,12 @@ p {
 .text-short-body{
 	width:95%;
 	font-size:12px;	
+}
+
+.title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom:10px;
 }
 
 .vendor-icon{

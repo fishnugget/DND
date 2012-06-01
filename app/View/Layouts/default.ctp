@@ -65,7 +65,7 @@ $this->set('title_for_layout','Good ');
             <div id="main-nav">
             	<ul id="main-nav-links">
                 	<li class="left">
-                    	<a href="javascript:;">
+                    	<a href="/">
                     	<div class="headline">HOME</div>
                     	<div class="subhead">DRINKS NEXT DOOR</div>
                         </a>
@@ -84,13 +84,13 @@ $this->set('title_for_layout','Good ');
                     </li>
                     <li class="right">
                     	<a href="javascript:;">
-                    	<div class="headline">HOODS</div>
+                    	<div class="headline">DRINKS</div>
                     	<div class="subhead">WHERE TO GO</div>
                         </a>
                     </li>
                     <li class="right">
-                    	<a href="javascript:;">
-                    	<div class="headline">SPOTS</div>
+                    	<a href="/places">
+                    	<div class="headline">PLACES</div>
                     	<div class="subhead">DRINKS NEXT DOOR</div>
                         </a>
                     </li>
