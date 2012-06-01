@@ -30,7 +30,7 @@ if($_SERVER['HTTP_HOST'] == 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] ==
 echo $this->Html->css('list');
 ?>
 
-<div id="home-search-top">
+<div id="home-search-top" style="margin-top:130px;">
 	<div id="home-top-mobile" class="splash"></div>
     <div id="home-top-right">
     	<div id="home-top-headline" class="splash"></div>
