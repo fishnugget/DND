@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.list{
+	min-height:300px;
+	background:#f1ebe4;
+	width:100%;
+	display:table;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border:1px #9d958c solid;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+	-webkit-box-shadow:0 1px 3px rgba(34,25,25,0.4);
+}
+
+.list-body-container{
+	width: 550px;
+	margin-left: 50px;
+}
+
+.list-item{
+	float:left;
+	clear:left;
+	margin:35px 35px 0;
+	padding-bottom:35px;
+	border-bottom:1px solid #9d958c;
+	position:relative;
+}
+
+	.list-item:last-child{
+		border:none;	
+	}
+
+.list-item .body{
+	font-size:12px;
+	font-weight:500;
+}
+
