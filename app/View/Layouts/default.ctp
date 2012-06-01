@@ -110,7 +110,7 @@ $this->set('title_for_layout','Good ');
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
-            
+			<?php if($_SERVER['HTTP_HOST'] !== 'www.drinksnextdoor.com' && $_SERVER['HTTP_HOST'] !== 'drinksnextdoor.com'){ ?>
             <div class="home-mod-row noborder margin-tb-20">
         		<div class="quarter left">
                 	<div class="footer-social-icon facebook left"></div>
@@ -129,6 +129,7 @@ $this->set('title_for_layout','Good ');
                     <div class="footer-social-copy left">Copyright 2012, Drinks Next Door</div>
                 </div>
         	</div>
+            <?php } ?>
 		
         </div>
 		
