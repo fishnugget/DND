@@ -26,7 +26,7 @@ echo $this->Html->script('home');
 
 <?php
 //CONTENT FOR SPLASH PAGE
-if($_SERVER['HTTP_HOST'] !== 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
+if($_SERVER['HTTP_HOST'] == 'www.drinksnextdoor.com' || $_SERVER['HTTP_HOST'] == 'drinksnextdoor.com'){
 echo $this->Html->css('list');
 ?>
 
@@ -36,7 +36,7 @@ echo $this->Html->css('list');
     	<div id="home-top-headline" class="splash"></div>
         <div id="home-top-search-box">
         <?php
-			echo $this->Form->create('Email', array('action' => 'splash'));
+			echo $this->Form->create('Signup', array('action' => 'splash'));
 			echo $this->Form->input('email', array('rel'=>'default', 'default'=>'ENTER YOUR EMAIL TO RECEIVE UPDATES', 'value'=>'ENTER YOUR EMAIL TO RECEIVE UPDATES', 'label'=>false, 'div'=>false));
 			echo $this->Form->button('Submit');
 			echo $this->Form->end();
