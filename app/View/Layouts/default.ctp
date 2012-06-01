@@ -47,6 +47,7 @@ $this->set('title_for_layout','Good ');
 	<div id="container">
 		<div id="header">
 			<a href="/"><div id="main-logo"></div></a>
+            <?php if($_SERVER['HTTP_HOST'] !== 'www.drinksnextdoor.com' && $_SERVER['HTTP_HOST'] !== 'drinksnextdoor.com'){ ?>
             <div class="row">
                 <div id="social-bar">
                 	<ul>
@@ -102,6 +103,7 @@ $this->set('title_for_layout','Good ');
                     </li>
                 </ul>
             </div>
+            <?php } ?>
 		</div>
 		<div id="content">
 
